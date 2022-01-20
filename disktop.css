@@ -1,0 +1,604 @@
+@media (min-width: 1025px) {
+  @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+  * {
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #141414;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
+
+  /* ################################## 
+Header 
+########################################### */
+
+  #btn {
+    display: none;
+  }
+
+  .header {
+    margin-right: 150px;
+    border-radius: 0 0 15px 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 12px;
+    background: rgba(24, 24, 24, 0.9);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-family: "Maven Pro", sans-serif;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 40px;
+  }
+
+  #menu li {
+    font-weight: 600;
+    margin-right: 2rem;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+  }
+
+  #menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0.8em;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+  }
+
+  #menu li a:hover {
+    color: rgb(92, 90, 255);
+  }
+
+  /* ################################## 
+some information 
+########################################### */
+
+  .infos {
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .infos div {
+    margin-left: 5rem;
+    margin-top: 28%;
+  }
+
+  .infos div h2 {
+    color: #ffffff;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 25px;
+    animation: 1.2s slide 1;
+    -webkit-animation: 1.2s slide 1;
+  }
+
+  .infos div p {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 22px;
+    width: 560px;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+    animation: 1.4s slide 1;
+    -webkit-animation: 1.4s slide 1;
+  }
+
+  .infos img {
+    min-width: 23em;
+    height: auto;
+    margin-top: 22%;
+    margin-right: 30px;
+  }
+
+  .infos .contact_me {
+    color: #fff;
+    padding: 16px 80px;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: rgb(92, 90, 255);
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 45px;
+    cursor: pointer;
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+    animation: 1.6s slide 1;
+    -webkit-animation: 1.6s slide 1;
+  }
+
+  .infos .contact_me:hover {
+    color: #000;
+    background-color: #71c4fc;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+
+  .infos .contact_me:active {
+    background-color: rgb(92, 90, 255);
+  }
+
+  .home_button {
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    font-size: 22px;
+    background-color: rgb(92, 90, 255);
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+  }
+
+  .home_button:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+
+  /*##########################
+animation
+###################################*/
+
+  @keyframes slide {
+    0% {
+      transform: translate(5000px, 0);
+      -webkit-transform: translate(5000px, 0);
+      -moz-transform: translate(5000px, 0);
+      -ms-transform: translate(5000px, 0);
+      -o-transform: translate(5000px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+    }
+  }
+
+  /* ################################## 
+about section 
+########################################### */
+
+  .title {
+    text-shadow: 0 0 25px rgb(92, 90, 255);
+    font-weight: 800;
+    font-size: 35px;
+    padding-block-end: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+    text-align: center;
+  }
+
+  #about {
+    font-family: "Maven Pro", sans-serif;
+    margin-top: 400px;
+    font-size: 35px;
+  }
+
+  .about {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .who_am_i {
+    color: #fff;
+    width: 100%;
+    line-height: 42px;
+    font-size: 18px;
+  }
+
+  .who_am_i h3 {
+    color: rgb(92, 90, 255);
+  }
+
+  .image img {
+    width: 50%;
+    margin-left: 10vh;
+  }
+
+  /* ################################## 
+skills section 
+########################################### */
+
+  .title_2 {
+    text-shadow: 0 0 25px rgb(92, 90, 255);
+    font-weight: 800;
+    font-size: 35px;
+    padding-block-end: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+    text-align: center;
+  }
+
+  #skills {
+    margin-top: 250px;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 35px;
+  }
+
+  .skills {
+    color: #fff;
+    margin: 150px 150px 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .skills h3 {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+
+  .bar {
+    position: relative;
+    display: block;
+    width: 450px;
+    height: 5px;
+    /* box-shadow: 0 0 20px #0099ff; */
+    box-shadow: 0 0 22px rgb(92, 90, 255);
+    margin-top: 15px;
+  }
+
+  .bar span {
+    height: 100%;
+    float: left;
+    background-color: rgb(92, 90, 255);
+  }
+
+  .html {
+    width: 90%;
+  }
+
+  .css {
+    width: 80%;
+  }
+
+  .javascript {
+    width: 40%;
+  }
+
+  .figma {
+    width: 90%;
+  }
+
+  .adobe_xd {
+    width: 85%;
+  }
+
+  .illustrator {
+    width: 50%;
+  }
+
+  .percent {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  /* ################################## 
+projects section 
+########################################### */
+
+  .title_3 {
+    text-shadow: 0 0 25px rgb(92, 90, 255);
+    font-weight: 800;
+    font-size: 35px;
+    padding-block-end: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+    text-align: center;
+  }
+
+  #projects {
+    margin-top: 250px;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 35px;
+  }
+
+  .projects_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    gap: 48px;
+    padding: 0 150px;
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  /* ### project 1 and 3 ### */
+
+  .project_1 img,
+  .project_3 img {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.7s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .project_2 img,
+  .project_4 img {
+    margin-top: 320px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+  }
+
+  .project_1 img:hover,
+  .project_2 img:hover,
+  .project_3 img:hover,
+  .project_4 img:hover {
+    box-shadow: 0 0 25px rgb(92, 90, 255);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+
+  /* ### button for mor projects ### */
+
+  .button button {
+    color: #fff;
+    padding: 16px 80px;
+    border: none;
+    margin-top: 100px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: rgb(92, 90, 255);
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+    display: none;
+  }
+
+  .button button:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    background-color: #71c4fc;
+    color: #000;
+  }
+
+  .button {
+    text-align: center;
+    padding: 64px;
+  }
+
+  /* ################################## 
+Services section 
+########################################### */
+
+  .title_4 {
+    text-shadow: 0 0 25px rgb(92, 90, 255);
+    font-weight: 800;
+    font-size: 35px;
+    padding-block-end: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+    text-align: center;
+  }
+
+  .cards {
+    padding: 0px 150px;
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 200px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cards img {
+    margin-bottom: 12px;
+    width: 90px;
+    height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .card {
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 220px;
+    text-align: center;
+    padding: 24px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-bottom: 64px;
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+    cursor: pointer;
+  }
+
+  #services {
+    margin-top: 150px;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 35px;
+  }
+
+  .card:hover {
+    box-shadow: 0 0 25px rgb(92, 90, 255);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+
+  .card h3 {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: rgb(92, 90, 255);
+  }
+
+  .card p {
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-size: 14px;
+    color: white;
+  }
+
+  /* ################################## 
+footer 
+########################################### */
+
+  .fa-chevron-right {
+    margin-left: 8px;
+  }
+
+  .fab {
+    font-size: 25px;
+    color: #fff;
+  }
+
+  footer {
+    margin: 200px 150px 0 150px;
+    padding: 32px;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer ul li {
+    display: inline-block;
+    padding: 0 14px;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  footer h5 {
+    color: white;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 15px;
+  }
+
+  .fab:hover {
+    color: rgb(92, 90, 255);
+  }
+
+  @media (max-width: 950px) {
+    .menu li {
+      display: none;
+    }
+
+    header div {
+      padding: 8px 2%;
+    }
+  }
+}

@@ -1,0 +1,513 @@
+@media (max-width: 768px) {
+  @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+    color: #fff;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #141414;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/mobile_bg.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  /*################################## 
+    Header 
+    ########################################### */
+
+  .header {
+    height: 3.75rem;
+    position: relative;
+    margin-right: 150px;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    background: rgba(24, 24, 24, 1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+    cursor: pointer;
+  }
+
+  .fa-bars {
+    width: 2rem;
+    font-size: 1.5rem;
+  }
+
+  #menu li {
+    list-style: none;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 2.2rem;
+  }
+
+  #menu li a {
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .logo {
+    font-family: "Maven Pro", sans-serif;
+    margin-left: 1rem;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+
+  #menu {
+    position: fixed;
+    top: 3.7rem;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: none;
+    cursor: pointer;
+    background: rgba(24, 24, 24, 1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 0 0 7px 7px;
+    -webkit-border-radius: 0 0 7px 7px;
+    -moz-border-radius: 0 0 7px 7px;
+    -ms-border-radius: 0 0 7px 7px;
+    -o-border-radius: 0 0 7px 7px;
+  }
+
+  /* ################################## 
+some information 
+########################################### */
+
+  .infos {
+    margin-top: 25%;
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .infos img {
+    max-width: 15em;
+    margin: 1em auto;
+  }
+
+  .infos div {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .infos div h2 {
+    /* padding: 0.1em 0; */
+    font-weight: 800;
+    font-size: 1.8em;
+    font-family: "Maven Pro", sans-serif;
+  }
+
+  .infos div p {
+    line-height: 1.5em;
+    padding: 1.2rem 0;
+  }
+
+  .contact_me {
+    padding: 0.7rem 3.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    background-color: rgb(92, 90, 255);
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .contact_me:hover {
+    background-color: rgb(112, 110, 252);
+  }
+
+  /* ################################## 
+About section 
+########################################### */
+
+  .title {
+    font-size: 1.7rem;
+    color: rgb(92, 90, 255);
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 10rem;
+    font-family: "Maven Pro", sans-serif;
+  }
+
+  .who_am_i h3 {
+    font-size: 1.3rem;
+    padding: 1.5rem;
+    color: #a1a0ff;
+  }
+
+  .who_am_i p {
+    padding: 0 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .title_2 {
+    font-size: 1.7rem;
+    color: rgb(92, 90, 255);
+    padding: 5rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: "Maven Pro", sans-serif;
+  }
+
+  /* ################################## 
+Skills section 
+########################################### */
+
+  .skills {
+    color: #fff;
+    margin-left: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100% */
+  }
+
+  .skills h3 {
+    margin-top: 50px;
+    font-size: 0.8rem;
+  }
+
+  .bar {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 5px;
+    /* box-shadow: 0 0 20px #0099ff; */
+    box-shadow: 0 0 22px rgb(92, 90, 255);
+    margin-top: 1rem;
+  }
+
+  .bar span {
+    height: 100%;
+    float: left;
+    background-color: rgb(92, 90, 255);
+  }
+
+  .html {
+    width: 90%;
+  }
+
+  .css {
+    width: 80%;
+  }
+
+  .javascript {
+    width: 40%;
+  }
+
+  .figma {
+    width: 90%;
+  }
+
+  .adobe_xd {
+    width: 85%;
+  }
+
+  .illustrator {
+    width: 50%;
+  }
+
+  .percent {
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  /* ################################## 
+projects section 
+########################################### */
+
+  .title_3 {
+    font-size: 1.7rem;
+    color: rgb(92, 90, 255);
+    padding: 5rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: "Maven Pro", sans-serif;
+  }
+
+  .project_1,
+  .project_2,
+  .project_3,
+  .project_4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3.5rem;
+  }
+
+  .project_1 img,
+  .project_3 img {
+    width: 85%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    text-align: center;
+  }
+
+  .project_2 img,
+  .project_4 img {
+    text-align: center;
+    width: 85%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+  }
+
+  .button button {
+    display: none;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    padding: 8px 3rem;
+    background: rgb(92, 90, 255);
+    border: none;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  /* ################################## 
+Footer section 
+########################################### */
+
+  footer ul {
+    margin: 2.5rem;
+  }
+
+  footer ul li {
+    list-style: none;
+  }
+
+  footer h5 {
+    margin-left: 1.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+
+  .fa-chevron-right {
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+  }
+
+  .title_4 {
+    font-size: 1.7rem;
+    color: rgb(92, 90, 255);
+    padding: 5rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: "Maven Pro", sans-serif;
+  }
+
+  .cards {
+    padding: 0px 1.8rem;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cards img {
+    margin-bottom: 1rem;
+    width: 6rem;
+    height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .card {
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17rem;
+    height: 17.75rem;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin-bottom: 3rem;
+    cursor: pointer;
+  }
+
+  .card h3 {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: rgb(92, 90, 255);
+  }
+
+  .card p {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .fa-instagram {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  .fa-instagram::after {
+    content: "Instagram";
+    margin-left: 0.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+
+  .fa-behance {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  .fa-behance::after {
+    content: "Behance";
+    margin-left: 0.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+
+  .fa-linkedin-in {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  .fa-linkedin-in::after {
+    content: "LinkedIn";
+    margin-left: 0.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+
+  .fa-twitter {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  .fa-twitter::after {
+    content: "Twitter";
+    margin-left: 0.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+
+  /* ################################## 
+Home button
+########################################### */
+
+  .home_button {
+    color: #fff;
+    position: fixed;
+    bottom: 4rem;
+    right: 3rem;
+    font-size: 1rem;
+    background-color: rgb(92, 90, 255);
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  .home_button:hover {
+    background-color: rgb(112, 110, 252);
+  }
+}
