@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     background-image: url(images/background.jpg);
-    background-size: 100% auto;
+    background-size: 100% 100vh;
     background-repeat: no-repeat;
     overflow-x: hidden;
   }
@@ -84,19 +84,22 @@ some information
   .infos {
     padding: 0 15%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
 
   .infos div {
+    text-align: center;
     margin-left: 5rem;
     margin-top: 28%;
   }
 
   .infos div h2 {
+    text-align: center;
     color: #ffffff;
     font-family: "Maven Pro", sans-serif;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 800;
     letter-spacing: 1px;
     line-height: 25px;
     animation: 1.2s slide 1;
@@ -104,13 +107,14 @@ some information
   }
 
   .infos div p {
+    text-align: center;
     color: #ffffff;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 500;
-    margin-top: 22px;
+    margin-top: 2.5rem;
     width: 560px;
-    letter-spacing: 0.7px;
-    line-height: 30px;
+    letter-spacing: 0.8px;
+    line-height: 1.8rem;
     animation: 1.4s slide 1;
     -webkit-animation: 1.4s slide 1;
   }
@@ -134,7 +138,7 @@ some information
     background-color: rgb(92, 90, 255);
     font-family: "Maven Pro", sans-serif;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 1rem;
     margin-top: 45px;
     cursor: pointer;
     transition: 0.7s ease;
