@@ -90,7 +90,9 @@ some information
 
   .infos div {
     text-align: center;
-    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: 28%;
   }
 
