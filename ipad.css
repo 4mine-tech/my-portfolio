@@ -8,6 +8,7 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     color: #fff;
+
   }
 
   html {
@@ -22,6 +23,7 @@
       url(images/background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
+    overflow-x: hidden;
   }
 
   /*################################## 
@@ -32,7 +34,7 @@
     height: 3.75rem;
     position: relative;
     margin-right: 150px;
-    z-index: 10;
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
@@ -129,16 +131,12 @@ some information
     font-weight: 800;
     font-size: 1.8em;
     font-family: "Maven Pro", sans-serif;
-    animation: 1.2s slide 1;
-    -webkit-animation: 1.2s slide 1;
   }
 
   .infos div p {
     line-height: 1.5em;
     padding: 1.2rem 0;
     letter-spacing: 1px;
-    animation: 1.4s slide 1;
-    -webkit-animation: 1.4s slide 1;
   }
 
   .contact_me {
@@ -150,8 +148,6 @@ some information
     font-weight: 600;
     font-size: 1rem;
     margin-top: 1rem;
-    animation: 1.6s slide 1;
-    -webkit-animation: 1.6s slide 1;
   }
 
   .contact_me:hover {

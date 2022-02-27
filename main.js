@@ -18,3 +18,7 @@ window.addEventListener("scroll", () => {
     header.classList.remove("bg_header");
   }
 });
+
+gsap.fromTo(".infos h2", {y: -100, delay: 0.6, opacity: 0}, {y: 0, opacity: 1, duration: 1.5});
+gsap.fromTo(".infos p", {y: -100, delay: 0.6,  opacity: 0}, {y: 0, opacity: 1, duration: 1.5});
+gsap.fromTo(".contact_me", {y: -100, delay: 0.6, opacity: 0}, {y: 0, opacity: 1, duration: 1.5});

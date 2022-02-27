@@ -41,6 +41,7 @@ Header
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
   }
 
   .bg_header {
@@ -122,8 +123,6 @@ some information
     width: 560px;
     letter-spacing: 0.8px;
     line-height: 1.8rem;
-    animation: 1.4s slide 1;
-    -webkit-animation: 1.4s slide 1;
   }
 
   .infos img {
@@ -143,13 +142,6 @@ some information
     font-size: 1rem;
     margin-top: 45px;
     cursor: pointer;
-    transition: 0.7s ease;
-    -webkit-transition: 0.7s ease;
-    -moz-transition: 0.7s ease;
-    -ms-transition: 0.7s ease;
-    -o-transition: 0.7s ease;
-    animation: 1.6s slide 1;
-    -webkit-animation: 1.6s slide 1;
   }
 
   .infos .contact_me:hover {
@@ -182,11 +174,6 @@ some information
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
-    transition: 0.7s ease;
-    -webkit-transition: 0.7s ease;
-    -moz-transition: 0.7s ease;
-    -ms-transition: 0.7s ease;
-    -o-transition: 0.7s ease;
   }
 
   .home_button:hover {
@@ -196,28 +183,6 @@ some information
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
   }
-
-  /*##########################
-animation
-###################################*/
-
-  @keyframes slide {
-    0% {
-      transform: translate(5000px, 0);
-      -webkit-transform: translate(5000px, 0);
-      -moz-transform: translate(5000px, 0);
-      -ms-transform: translate(5000px, 0);
-      -o-transform: translate(5000px, 0);
-    }
-    100% {
-      transform: translate(0, 0);
-      -webkit-transform: translate(0, 0);
-      -moz-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-      -o-transform: translate(0, 0);
-    }
-  }
-
   /* ################################## 
 about section 
 ########################################### */
